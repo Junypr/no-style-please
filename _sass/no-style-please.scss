@@ -27,6 +27,8 @@ html, body { background: white; }
 
 html { height: 100%; scroll-behavior: smooth; }
 
+// text styles
+
 body {
   color: black;
   font-family: monospace;
@@ -39,15 +41,37 @@ body {
 
 .post-meta { text-align: right; }
 
-h2, h3, h4, h5, h6 { margin-top: 3rem; }
+h1 {
+  //color: black
+}
 
-hr { margin: 2rem 0; }
+a:link {
+  color: #B7B7B7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #B7B7B7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E84A2A;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 3rem;
+  //color: #E84A2A
+}
+
+hr { margin: 2rem 0; color: #B7B7B7}
 
 p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
 
-*:target { background: yellow; }
+*:target { background: #ececec; }
 
 .w {
   max-width: 640px;
@@ -95,4 +119,14 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #E84A2A;
+}
+
+::selection {
+  color: white;
+  background: #E84A2A;
 }
